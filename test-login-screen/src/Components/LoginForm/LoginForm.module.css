@@ -1,0 +1,17 @@
+.form {
+  background-color: #ffffff;
+  padding: 32px;
+  width: 440px;
+}
+
+.input {
+  margin-bottom: 16px;
+}
+
+.button {
+  width: 100%;
+}
+
+.formItem {
+  margin: 0;;
+}
