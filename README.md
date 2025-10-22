@@ -11,7 +11,7 @@ Login screen:
 4. email === "error@mail.com" - server error
 
 OTP screen:
-otp === OTP - succes
-otp !== OTP - invalid code
+1. otp === OTP - succes
+2. otp !== OTP - invalid code
 
 Login screen сделан без роутинга, поэтому для возврата с User screen необходимо перезагрузить страницу
