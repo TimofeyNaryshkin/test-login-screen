@@ -10,7 +10,7 @@
 3. email === "nouser@mail.com" - user doesn't exist
 4. email === "error@mail.com" - server error
 
-### OTP screen--:
+### OTP screen:
 1. otp === OTP - succes
 2. otp !== OTP - invalid code
 
