@@ -33,3 +33,7 @@
 .buttonContainer {
   margin: 16px 0 0;
 }
+
+.logo {
+  background-image: url(../../assets/_Logo\ Placeholder.svg);
+}

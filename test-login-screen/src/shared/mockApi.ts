@@ -1,3 +1,5 @@
+import { OTP } from "./constants";
+
 const mockApi = {
   login: async (email: string, password: string) => {
     await new Promise((resolve) => setTimeout(resolve, 1500));
@@ -5,8 +7,7 @@ const mockApi = {
     if (email === "test@mail.com" && password === "123456") {
       return {
         succes: true,
-        token: crypto.randomUUID(),
-        OTP: "123456",
+        OTP,
       };
     }
 
@@ -23,6 +24,18 @@ const mockApi = {
     }
 
     throw new Error("wrong email or password, please try again");
+  },
+
+  verifyOTP: async (otp: string) => {
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+    if (otp === OTP) {
+      return {
+        success: true,
+        token: crypto.randomUUID(),
+        name: "Test Name",
+      };
+    }
+    throw new Error("Ivalid code");
   },
 };
 

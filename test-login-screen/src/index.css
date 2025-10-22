@@ -26,3 +26,23 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
+#otp_help {
+  text-align: left;
+}
+
+.ant-otp-input-wrapper {
+  width: 53px;
+  height: 60px;
+}
+
+#otp {
+  gap: 12px;
+}
+
+.ant-input.ant-input-lg {
+  width: 53px;
+  height: 60px;
+  font-size: 24px;
+  font-weight: 600;
+}
